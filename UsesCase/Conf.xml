@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Executions>
+	<Execution><TestCase>net.kata.bankapp.scenarii.ScenAddClientAccount</TestCase></Execution>
+	<Execution><TestCase>net.kata.bankapp.scenarii.ScenNegatifBalance</TestCase></Execution>
+</Executions>

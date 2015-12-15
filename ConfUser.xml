@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<repertoire>
+    <!-- John DOE -->
+    
+    <param User="Admin_en">
+		<TypeUser>all_admin</TypeUser>
+		<Login>all_admin</Login>
+		<PW>all_admin</PW>
+		<Langue>en</Langue>
+	</param>
+
+	<param User="Admin_fr">
+		<TypeUser>all_admin</TypeUser>
+		<Login>all_admin</Login>
+		<PW>all_admin</PW>
+		<Langue>Fr</Langue>
+	</param>
+    
+    
+    
+    
+</repertoire>
