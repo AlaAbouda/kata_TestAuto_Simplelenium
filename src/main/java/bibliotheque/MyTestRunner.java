@@ -10,12 +10,6 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
-
-
-
-
-
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -36,8 +30,7 @@ public class MyTestRunner {
 			//List testCases = new ArrayList();
 			 List<Class<?>> testCases=new ArrayList<Class<?>>();
 			 String Val = null;
-        	 String Path = new java.io.File( "." ).getCanonicalPath();
-			 String Tab2[] = ReadXML(Path + "/UsesCase/Conf.xml");
+			 String Tab2[] = ReadXML( "UsesCase/Conf.xml");
 			 for(int i=0; i<Tab2.length; i++)
 			{
 				 Val = Tab2[i];
@@ -47,8 +40,8 @@ public class MyTestRunner {
 					 testCases.add(Class.forName(Val));
 				 }
 			}
-
 			
+			//runTestCase(Class.forName("net.diegolemos.bankapp.scenarii.ScenNegatifAmount"));
 			for (Class testCase : testCases)
 	        {
 	            runTestCase(testCase);
