@@ -29,6 +29,7 @@ public class Client extends SeleniumTest {
 			System.out.println( "Add client");
 			find(By.name(Reposetory.getTxtNameClient())).sendKeys(nameClient);
 			find(By.name(Reposetory.getBtnNameAdd())).click();
+			Thread.sleep(2000L);
 		}
 	
 	

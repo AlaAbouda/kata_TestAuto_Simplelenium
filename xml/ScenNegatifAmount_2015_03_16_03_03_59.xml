@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Rapport>
+<build_id></build_id>
+<test_plan_id></test_plan_id>
+<id_case>ScenNegatifAmount</id_case>
+<date_execution>16-12-2015</date_execution>
+<heure_debut>03:03:27</heure_debut>
+ <Step>
+ <Commentaire>2 - Go to 'Client' menu </Commentaire>
+<date_executionStep>16-12-2015</date_executionStep>
+<heure_debutStep>03:03:29</heure_debutStep>
+<EtatStep>p</EtatStep>
+</Step>
+<resultat>p</resultat>
+<date_fin>16-12-2015</date_fin>
+<heure_fin>03:03:59</heure_fin>
+</Rapport>

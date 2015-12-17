@@ -42,6 +42,7 @@ public class Account extends SeleniumTest {
 					System.out.println( "Search client");
 					find(Reposetory.getTxtIdClient()).sendKeys(nameClient);
 					find(By.name(Reposetory.getBtnNameSearch())).click();
+					Thread.sleep(2000L);
 				}
 		
 		
@@ -68,6 +69,14 @@ public class Account extends SeleniumTest {
 			public  int getNBTransaction() {
 			   int xpathCount =  find(By.xpath(Reposetory.getTxtNameAmountAll())).driver().findElements(By.xpath(Reposetory.getTxtNameAmountAll())).size();
 			   return (xpathCount);
+			}
+			
+			//Get value of balance 
+			public String getBalance() {
+				String element = Reposetory.getLblClassAmountAll();
+				String resultat = find(By.xpath(element)).driver().findElement(By.xpath(element)).getText();
+				resultat = resultat.replace(" EUR", "");
+				return (resultat);
 			}
 			
 			
@@ -117,6 +126,14 @@ public class Account extends SeleniumTest {
 		{
 			return ".//*[@name='amount']";
 		}
+		
+		public static String getLblClassAmountAll()
+		{
+			return ".//*[@class='ng-binding']";
+		}
+		
+		
+		//find("#ng-binding").should().not().contain("90 EUR");
 
 	}
 
@@ -126,6 +143,8 @@ public class Account extends SeleniumTest {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	
 
 	
 
